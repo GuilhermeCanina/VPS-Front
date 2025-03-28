@@ -22,7 +22,7 @@ a{
     }
 
     & th {
-        background-color: rgb(254, 139, 139);
+        background-color: rgb(173, 173, 173);
     }
 
     & tr:nth-child(even) {
