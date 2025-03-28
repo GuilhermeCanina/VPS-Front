@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos IPlast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<header>
+    <a href="index.html">
+        <h1>IPlast</h1>
+    </a>
+</header>
+<body>
+    <main>
+        <container class="cadastro">
+            <button id="abrirModal">Novo Funcionario</button>
+        </container>
+        <div id="euamoModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Funcionario</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="number" placeholder="CPF" name="cpf" maxlength="11">
+                <input type="email" placeholder="Email" name="Email">
+                <input type="number" placeholder="Telefone" name="telefone" maxlength="11">
+                <input type="text" placeholder="Logradouro" name="Logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+    </main>
+
+    <table class="table-produtos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Logradouro</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hugo Souza (Neneca)</td>
+                <td>12345678900</td>
+                <td>neneca@gmail.com</td>
+                <td>12345678901</td>
+                <td>Rua das Laranjeiras, 10</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+            <tr>
+                <td>Edu Ramalho</td>
+                <td>98765432100</td>
+                <td>edu@outlook.com</td>
+                <td>19998899123</td>
+                <td>Avenida das Palmeiras, 00</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<footer>
+    <p>Desenvolvido por Guilherme Canina</p>
+</footer>
+<script src="js/modal.js"></script>
+</html>

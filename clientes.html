@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos IPlast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<header>
+    <a href="index.html">
+        <h1>IPlast</h1>
+    </a>
+</header>
+<body>
+    <main>
+        <container class="cadastro">
+            <button id="abrirModal">Novo Clientes</button>
+        </container>
+        <div id="euamoModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Cliente</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="number" placeholder="CPF" name="cpf" maxlength="11">
+                <input type="email" placeholder="Email" name="Email">
+                <input type="text" placeholder="Logradouro" name="Logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+    </main>
+
+    <table class="table-produtos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Logradouro</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlos Eduardo</td>
+                <td>12345678900</td>
+                <td>carlos@gmail.com</td>
+                <td>Rua das Flores, 123</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+            <tr>
+                <td>Maria Silva</td>
+                <td>98765432100</td>
+                <td>maria@hotmail.com</td>
+                <td>Avenida Brasil, 456</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<footer>
+    <p>Desenvolvido por Guilherme Canina</p>
+</footer>
+<script src="js/modal.js"></script>
+</html>

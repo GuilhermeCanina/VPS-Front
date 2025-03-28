@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.button{
+    display: flex;
+    gap: 20px;
+}
+
+.botao{
+    background-color: black;
+    color: white;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+body{
+    background: rgb(219, 219, 219);
+}

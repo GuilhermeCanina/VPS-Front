@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos IPlast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<header>
+    <a href="index.html">
+        <h1>IPlast</h1>
+    </a>
+    </header>
+<body>
+    <main>
+        <container class="cadastro">
+            <button id="abrirModal">Novo Produto</button>
+        </container>
+        <div id="euamoModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Produto</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="Descrição" name="descricao">
+                <input type="text" placeholder="Valor de Custo" name="valorcusto">
+                <input type="text" placeholder="Valor de Venda" name="valorvenda">
+                <input type="submit" value="Cadastrar">
+            </div>
+    </main>
+
+    <table class="table-produtos">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Descrição</th>
+                <th>Valor Custo</th>
+                <th>Valor Venda</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Garrafa Plástica</td>
+                <td>Garrafa reutilizável de 500ml</td>
+                <td>R$ 10,00</td>
+                <td>R$ 15,00</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+            <tr>
+                <td>Pote de Plástico</td>
+                <td>Pote para armazenamento de alimentos</td>
+                <td>R$ 8,00</td>
+                <td>R$ 12,00</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<footer>
+    <p>Desenvolvido por Guilherme Canina</p>
+</footer>
+<script src="js/modal.js"></script>
+</html>
